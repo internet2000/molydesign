@@ -1,7 +1,7 @@
 name: Ftp deployment
 on:
   push:
-    branches: [ master, staging ]
+    branches: [ main, staging ]
 
 
 env:
