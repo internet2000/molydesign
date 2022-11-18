@@ -16,7 +16,7 @@ jobs:
         run: |
           echo "NODE_ENV=development" >> $GITHUB_ENV
       - name: Set env vars (prod)
-        if: endsWith(github.ref, '/master')
+        if: endsWith(github.ref, '/main')
         run: |
           echo "NODE_ENV=production" >> $GITHUB_ENV
       - uses: actions/checkout@master
@@ -36,7 +36,7 @@ jobs:
           local-dir: ${{ secrets.ftp_local_path }}
           server-dir: ${{ secrets.ftp_path_staging }}
       - name: FTP transfer to prod
-        if: endsWith(github.ref, '/master')
+        if: endsWith(github.ref, '/main')
         uses: SamKirkland/FTP-Deploy-Action@4.2.0
         with:
           server: ${{ secrets.ftp_host }}
