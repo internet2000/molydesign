@@ -160,3 +160,6 @@ This is what the secret section should look like:
 
 ![settings of the repository, "secret" section, create 1 new secret](https://user-images.githubusercontent.com/715377/149593587-1e5497c0-a52c-49c0-8196-23b87bf67a9b.png)
 
+## To edit this website :
+Editable on https://design.stastic.net/
+Published on Main
